@@ -1,0 +1,72 @@
+*{
+    /* border: 2px green solid; */
+}
+body{
+    height: 100%;
+    margin:0;
+    background-color: rgb(253, 234, 212);
+    background-image: url("Assets/linktree_background.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+   font-family: 'EB Garamond', serif;
+   color:rgb(255, 255, 255);
+   font-size: 25px;
+   position: relative;
+   text-align: center;
+}
+
+.main-container{  
+    display: grid; 
+    height: 100%;
+    grid-template-columns: 200px;
+    grid-template-rows: 5px 300px 400px;
+    grid-template-areas: 
+    "logo"
+    "icon"
+    "link";
+    align-content: center;
+    justify-content: center;
+    padding: 15px;  
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+
+
+ .link-container {
+    grid-area: link;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-container{
+    grid-area:logo;
+}
+
+.icon-container{
+grid-area: icon;
+}
+
+.link-container h1{
+    text-align: center;
+    margin-top: 43px;
+    padding: 20px;
+    border-width: 2px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    background-color:#f37c90;
+    }
+    /*Text color */
+   
+    /* Hover effect for links text */
+    a:hover {
+    background: #ec9fb2;
+    }

@@ -67,6 +67,12 @@ grid-area: icon;
     /*Text color */
    
     /* Hover effect for links text */
-    a:hover {
-    background: #ec9fb2;
+    h1 a:hover {
+    color: #e9ab37;
+    text-decoration: inherit;
+    }
+
+    h1 a:visited {
+        color: white;
+        text-decoration: inherit;
     }
